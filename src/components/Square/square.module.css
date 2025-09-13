@@ -1,0 +1,30 @@
+.square {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+.x {
+  color: #ff6b6b;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.o {
+  color: #4ecdc4;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
