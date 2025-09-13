@@ -28,10 +28,6 @@ export default function Board({
     onPlay(nextSquares);
   }
 
-  const renderSquare = (i) => (
-    <Square value={squares[i]} onSquareClick={() => handleClick(i)} />
-  );
-
   return (
     <Card className={styles.boardContainer} bg="dark" text="white">
       <Card.Body>
@@ -42,7 +38,7 @@ export default function Board({
             <span>Jogador O: {scores.O}</span>
           </div>
         </div>
-        <div className={styles.status}>{getStatusMessage()}</div>
+        <div className={styles.status}>{status}</div>
         <Row className={styles.board}>
           {squares.map((square, index) => (
             <Col key={index} xs={4} className="p-1">
