@@ -49,24 +49,25 @@ export default function Game() {
         }));
       }
     } else if (isDraw) {
-      setRoundOverStatus("😐 Deu velha!");
+      setRoundOverStatus("Deu velha!");
     }
 
     if (winner || isDraw) {
-      const statusTimer = setTimeout(() => setCountdown(3), 2000);
-      return () => clearTimeout(statusTimer);
-    }
-  }, [winner, isDraw, history]);
+    setCountdown(3);
+  }
+}, [winner, isDraw, history]);
 
   useEffect(() => {
-    if (countdown === null) return;
-    if (countdown === 0) {
-      handleRestartRound();
-      return;
-    }
-    const timer = setInterval(() => setCountdown((prev) => prev - 1), 1000);
-    return () => clearInterval(timer);
-  }, [countdown]);
+  if (countdown === null) return;
+
+  if (countdown === 0) {
+    handleRestartRound();
+    return;
+  }
+
+  const timer = setTimeout(() => setCountdown((prev) => prev - 1), 1000);
+  return () => clearTimeout(timer);
+}, [countdown]);
 
   function handlePlay(nextSquares) {
     if (winner || isDraw) return;

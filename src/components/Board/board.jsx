@@ -13,13 +13,16 @@ export default function Board({
   countdown,
 }) {
   let status = "";
-  if (roundOverStatus) {
-    status = roundOverStatus;
-  } else if (countdown !== null && countdown > 0) {
-    status = `Nova rodada em ${countdown}...`;
-  } else {
-    status = `Próximo jogador: ${xIsNext ? "X" : "O"}`;
+
+if (roundOverStatus) {
+  status = roundOverStatus;
+  if (countdown !== null && countdown > 0) {
+    status += ` | Nova rodada em ${countdown}...`;
   }
+} else {
+  status = `Próximo jogador: ${xIsNext ? "X" : "O"}`;
+}
+
 
   function handleClick(i) {
     if (squares[i] || roundOverStatus) return;
