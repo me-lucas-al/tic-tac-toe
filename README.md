@@ -1,12 +1,47 @@
-# React + Vite
+# 🎮 Jogo da Velha
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um clássico **Jogo da Velha (Tic-Tac-Toe)** feito com **React**, **Vite** e **React-Bootstrap**, estilizado com **CSS Modules**.  
+O jogo conta com placar, reinício de rodada e reinício de jogo, além de mensagens dinâmicas de status.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Funcionalidades
 
-## Expanding the ESLint configuration
+- ✅ Jogador **X** vs **O**
+- ✅ Exibição de **placar**
+- ✅ Mensagens de status:
+  - Próximo jogador
+  - Vencedor 🏆
+  - Empate (Deu velha 😐)
+  - Contagem regressiva para nova rodada
+- ✅ Botões para **reiniciar rodada** ou **reiniciar o jogo**
+- ✅ Layout moderno com **React-Bootstrap** + **CSS Modules**
+- ✅ Responsivo e adaptável
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tecnologias usadas
+
+- [React](https://reactjs.org/) (com [Vite](https://vitejs.dev/))
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [Bootstrap](https://getbootstrap.com/)
+- CSS Modules (`*.module.css`)
+
+---
+## 📂 Estrutura do projeto
+
+src/
+ ├── components/
+ │    ├── Board/
+ │    │    ├── board.jsx
+ │    │    └── board.module.css
+ │    ├── Game/
+ │    │    ├── game.jsx
+ │    │    └── game.module.css
+ │    └── Square/
+ │         ├── square.jsx
+ │         └── square.module.css
+ ├── App.jsx
+ ├── App.css
+ ├── main.jsx
+ └── index.css
