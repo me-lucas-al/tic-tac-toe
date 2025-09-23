@@ -1,6 +1,8 @@
 # 🎮 Jogo da Velha
 
-Um clássico **Jogo da Velha (Tic-Tac-Toe)** feito com **React**, **Vite** e **React-Bootstrap**, estilizado com **CSS Modules**.  
+Projeto desenvolvido na faculdade, sob orientação da professora Ana Paula Muller Giancolli, na disciplina de Desenvolvimento Web Front-End.
+
+Um clássico Jogo da Velha (Tic-Tac-Toe) feito com React, Vite e React-Bootstrap, estilizado com CSS Modules.
 O jogo conta com placar, reinício de rodada e reinício de jogo, além de mensagens dinâmicas de status.
 
 ---
@@ -29,7 +31,7 @@ O jogo conta com placar, reinício de rodada e reinício de jogo, além de mensa
 
 ---
 ## 📂 Estrutura do projeto
-
+```bash
 src/
  ├── components/
  │    ├── Board/
@@ -45,3 +47,6 @@ src/
  ├── App.css
  ├── main.jsx
  └── index.css
+```
+
+
